@@ -106,11 +106,29 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'You have pushed the button this many times:',
+              'Choose an option:',
+              style: TextStyle(fontSize: 24),
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                // Handle option 1
+              },
+              child: const Text('Option 1'),
+            ),
+            const SizedBox(height: 10),
+            ElevatedButton(
+              onPressed: () {
+                // Handle option 2
+              },
+              child: const Text('Option 2'),
+            ),
+            const SizedBox(height: 10),
+            ElevatedButton(
+              onPressed: () {
+                // Handle option 3
+              },
+              child: const Text('Option 3'),
             ),
           ],
         ),
