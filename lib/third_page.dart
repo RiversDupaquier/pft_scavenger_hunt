@@ -47,14 +47,17 @@ class _ThirdPageState extends State<ThirdPage> {
                   onPressed: _isOptionDisabled[0] ? null : () => _handleOption(0, false),
                   child: Text(_buttonTexts[0]),
                 ),
+                const SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: _isOptionDisabled[1] ? null : () => _handleOption(1, true),
                   child: Text(_buttonTexts[1]),
                 ),
+                const SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: _isOptionDisabled[2] ? null : () => _handleOption(2, false),
                   child: Text(_buttonTexts[2]),
                 ),
+                const SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: _isOptionDisabled[3] ? null : () => _handleOption(3, false),
                   child: Text(_buttonTexts[3]),
