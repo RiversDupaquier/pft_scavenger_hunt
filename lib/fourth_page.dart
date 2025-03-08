@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'fifth_page.dart';
+import 'sixth_page.dart';
 class FourthPage extends StatelessWidget {
   const FourthPage({super.key});
 
@@ -14,8 +15,28 @@ class FourthPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
-              'Great! Let\'s begin!',
+              'Up Ahead from the Commons is the Hall of Distinction and to the right is the Cambre Atrium. Where do you want to go next?',
               style: TextStyle(fontSize: 24),
+            ),
+           const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const FifthPage()),
+                );
+              },
+              child: const Text("Got to Hall of Distinction"),
+            ),
+            const SizedBox(height: 10),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SixthPage()),
+                );
+              },
+              child: const Text("Got to Cambre Atrium"),
             ),
           ],
         ),
