@@ -106,7 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'Choose an option:',
+              'Welcome to the Patrick F Taylor Scavenger Hunt! Are you ready to learn about the amaaaaazing things located in PFT?',
               style: TextStyle(fontSize: 24),
             ),
             const SizedBox(height: 20),
@@ -114,30 +114,19 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () {
                 // Handle option 1
               },
-              child: const Text('Option 1'),
+              child: const Text('Yes!'),
             ),
             const SizedBox(height: 10),
             ElevatedButton(
               onPressed: () {
                 // Handle option 2
               },
-              child: const Text('Option 2'),
+              child: const Text('No!'),
             ),
             const SizedBox(height: 10),
-            ElevatedButton(
-              onPressed: () {
-                // Handle option 3
-              },
-              child: const Text('Option 3'),
-            ),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
